@@ -2,26 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "ExGothic";
+  src: url("/fonts/ExchangerGothic.ttf");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@font-face {
+  font-family: "CairoLight";
+  src: url("/fonts/Cairo-Light.ttf");
+}
+
+@font-face {
+  font-family: "CairoBold";
+  src: url("/fonts/Cairo-Bold.ttf");
+}
+
+@layer base{
+  body{
+    @apply bg-[#07060a] text-white tracking-wide font-exgothic
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  h1{
+    @apply text-7xl md:text-9xl text-[#f4eeff] mb-4 font-exgothic
+  }
+
+  h2{
+    @apply text-2xl md:text-5xl text-[#dec4ff] z-30 font-exgothic
+  }
+  
 }
