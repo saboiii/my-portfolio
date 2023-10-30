@@ -8,9 +8,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        exgothic: ['ExGothic', 'sans-serif'],
-        cairolight: ['CairoLight', 'sans-serif'],
-        cairobold: ['CairoBold', 'sans-serif']
+        righteous: ['Righteous', 'sans-serif'],
+        mavenmedium: ['Maven', 'sans-serif'],
+        mavenbold: ['MavenBold', 'sans-serif'],
+        josefinsansbold: ['JosefinSansBold', 'sans-serif'],
+        josefinsanslight: ['JosefinSans', 'sans-serif']
       },
     },
   },

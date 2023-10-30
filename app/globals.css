@@ -3,31 +3,41 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "ExGothic";
-  src: url("/fonts/ExchangerGothic.ttf");
+  font-family: "Righteous";
+  src: url("/fonts/Righteous-Regular.ttf");
 }
 
 @font-face {
-  font-family: "CairoLight";
-  src: url("/fonts/Cairo-Light.ttf");
+  font-family: "Maven";
+  src: url("/fonts/MavenPro-Medium.ttf");
 }
 
 @font-face {
-  font-family: "CairoBold";
-  src: url("/fonts/Cairo-Bold.ttf");
+  font-family: "JosefinSans";
+  src: url("/fonts/JosefinSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "JosefinSansBold";
+  src: url("/fonts/JosefinSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "MavenBold";
+  src: url("/fonts/MavenPro-Bold.ttf");
 }
 
 @layer base{
   body{
-    @apply bg-[#07060a] text-white tracking-wide font-exgothic
+    @apply bg-[#07060a] text-white tracking-wide font-josefinsanslight
   }
 
   h1{
-    @apply text-7xl md:text-9xl text-[#f4eeff] mb-4 font-exgothic
+    @apply text-7xl md:text-9xl bg-gradient-to-bl from-purple-200 to-orange-200 text-transparent bg-clip-text mb-4 font-righteous
   }
 
   h2{
-    @apply text-2xl md:text-5xl text-[#dec4ff] z-30 font-exgothic
+    @apply text-2xl md:text-4xl z-30 font-mavenbold uppercase bg-gradient-to-br from-slate-300 to-rose-50 text-transparent bg-clip-text
   }
   
 }
