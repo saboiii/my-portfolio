@@ -3,41 +3,41 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Righteous";
-  src: url("/fonts/Righteous-Regular.ttf");
+  font-family: "AveriaBold";
+  src: url("/fonts/AveriaSerifLibre-Bold.ttf");
 }
 
 @font-face {
-  font-family: "Maven";
-  src: url("/fonts/MavenPro-Medium.ttf");
+  font-family: "AveriaRegular";
+  src: url("/fonts/AveriaSerifLibre-Regular.ttf");
 }
 
 @font-face {
-  font-family: "JosefinSans";
-  src: url("/fonts/JosefinSans-Light.ttf");
+  font-family: "PridiLight";
+  src: url("/fonts/Pridi-Light.ttf");
 }
 
 @font-face {
-  font-family: "JosefinSansBold";
-  src: url("/fonts/JosefinSans-Bold.ttf");
+  font-family: "PridiMed";
+  src: url("/fonts/Pridi-Medium.ttf");
 }
 
 @font-face {
-  font-family: "MavenBold";
-  src: url("/fonts/MavenPro-Bold.ttf");
+  font-family: "Taviraj";
+  src: url("/fonts/Taviraj-Black.ttf");
 }
 
 @layer base{
   body{
-    @apply bg-[#07060a] text-white tracking-wide font-josefinsanslight
+    @apply bg-[#0a0706] text-white tracking-wide font-pridilight
   }
 
   h1{
-    @apply text-7xl md:text-9xl bg-gradient-to-bl from-rose-100 to-rose-200 text-transparent bg-clip-text mb-4 font-righteous
+    @apply text-6xl md:text-8xl bg-gradient-to-bl from-rose-100 to-orange-100 text-transparent bg-clip-text mb-4 font-taviraj
   }
 
   h2{
-    @apply text-2xl md:text-4xl z-30 font-mavenbold uppercase bg-gradient-to-br from-gray-300 to-rose-50 text-transparent bg-clip-text
+    @apply text-2xl md:text-4xl z-30 font-averiaregular uppercase bg-gradient-to-br from-gray-300 to-yellow-50 text-transparent bg-clip-text
   }
   
 }

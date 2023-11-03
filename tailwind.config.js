@@ -8,11 +8,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        righteous: ['Righteous', 'sans-serif'],
-        mavenmedium: ['Maven', 'sans-serif'],
-        mavenbold: ['MavenBold', 'sans-serif'],
-        josefinsansbold: ['JosefinSansBold', 'sans-serif'],
-        josefinsanslight: ['JosefinSans', 'sans-serif']
+        averiabold: ['AveriaBold', 'serif'],
+        averiaregular: ['AveriaRegular', 'serif'],
+        pridilight: ['PridiLight', 'serif'],
+        pridimed: ['PridiMed', 'serif'],
+        taviraj: ['Taviraj', 'serif']
       },
     },
   },
