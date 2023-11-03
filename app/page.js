@@ -50,13 +50,13 @@ export default function Home() {
 
         <div className="flex flex-col justify-center w-full items-center md:items-start md:px-[15%]">
           <p className="ml-2 font-josefinsans text-md text-red-100/50 mb-1">SABA | AZAD | 17 | GIIS</p>
-          <h1 className="mb-2 z-10 lg:text-[120px]">PORTFOLIO</h1>
-          <div className="line w-screen border-t border-white my-2"></div>
-          <h2 className="ml-1 mt-4">In production.</h2>
+          <div className="line w-48 ml-2 border-t border-white my-2"></div>
+          <h1 className="mb-2 z-10">PORTFOLIO</h1>
+          <h2 className="ml-1">In production.</h2>
 
-          <div className="blob z-0 absolute rounded-[999px] blur-3xl md:w-[750px] w-[500px] h-[500px] md:h-[750px] bg-gradient-to-l from-red-500/5 via-orange-500/5 to-rose-300/5" />
-          <div className="blob z-0 absolute top-0 left-0 rounded-[999px] blur-3xl w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-gradient-to-l from-orange-500/5 to-rose-400/5" />
-          <div className="blob z-0 absolute rounded-[999px] blur-3xl w-[200px] h-[200px] md:w-[500px] md:h-[500px] bg-gradient-to-l from-orange-500/10 md:from-yellow-500/5 to-rose-400/10" />
+          <div className="blob z-0 absolute rounded-[999px] blur-3xl md:w-[750px] w-[500px] h-[500px] md:h-[750px] bg-gradient-to-l from-red-500/5 via-orange-200/5 to-rose-300/5" />
+          <div className="blob z-0 absolute top-0 left-0 rounded-[999px] blur-3xl w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-gradient-to-l from-orange-200/5 to-rose-400/5" />
+          <div className="blob z-0 absolute rounded-[999px] blur-3xl w-[200px] h-[200px] md:w-[500px] md:h-[500px] bg-gradient-to-l from-orange-500/10 md:from-yellow-500/5 to-rose-400/5" />
           <div className="blob z-0 absolute bottom-0 right-0 rounded-[999px] blur-3xl w-[250px] h-[250px] md:w-[500px] md:h-[500px] bg-gradient-to-l from-rose-500/5 to-yellow-950/5 md:to-green-400/5" />
         </div>
 
