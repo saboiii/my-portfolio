@@ -33,11 +33,11 @@
   }
 
   h1{
-    @apply text-7xl md:text-9xl bg-gradient-to-bl from-purple-200 to-orange-200 text-transparent bg-clip-text mb-4 font-righteous
+    @apply text-7xl md:text-9xl bg-gradient-to-bl from-rose-100 to-rose-200 text-transparent bg-clip-text mb-4 font-righteous
   }
 
   h2{
-    @apply text-2xl md:text-4xl z-30 font-mavenbold uppercase bg-gradient-to-br from-slate-300 to-rose-50 text-transparent bg-clip-text
+    @apply text-2xl md:text-4xl z-30 font-mavenbold uppercase bg-gradient-to-br from-gray-300 to-rose-50 text-transparent bg-clip-text
   }
   
 }
