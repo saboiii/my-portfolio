@@ -8,37 +8,27 @@ export default function Home() {
 
   const projects = [
     {
-      title: 'Project 1',
-      subtitle: 'Description for Project 1',
-      image: '/images/dummy1.jpeg',
+      title: 'SLEEPWALKER',
+      subtitle: '2D Platformer made using Unity Engine & URP',
+      image: '/images/sleepwalker.png',
     },
     {
-      title: 'Project 2',
-      subtitle: 'Description for Project 2',
-      image: '/images/dummy2.jpeg',
+      title: 'IMMUNE',
+      subtitle: 'Top-down 2D Battle Strategy game made using Unity',
+      image: '/images/immune.png',
     },
     {
-      title: 'Project 3',
-      subtitle: 'Description for Project 3',
-      image: '/images/dummy3.jpeg',
+      title: 'PORTFOLIO',
+      subtitle: 'Example portfolio website created using TailwindCSS & React',
+      image: '/images/artdemon.png',
     },
     {
-      title: 'Project 4',
-      subtitle: 'Description for Project 4',
-      image: '/images/dummy4.jpeg',
-    },
-    {
-      title: 'Project 5',
-      subtitle: 'Description for Project 5',
-      image: '/images/dummy5.jpeg',
-    },
-    {
-      title: 'Project 6',
-      subtitle: 'Description for Project 6',
-      image: '/images/dummy6.jpeg',
+      title: 'CHERISH SG Website',
+      subtitle: 'Next.js, React, TailwindCSS full-stack blog web app for social campaign',
+      image: '/images/cherish.png',
     },
   ];
-  
+
   const groupedProjects = Array.from({ length: numColumns }, (_, columnIndex) =>
     projects.filter((_, index) => index % numColumns === columnIndex)
   );
@@ -49,15 +39,15 @@ export default function Home() {
       <div className="flex h-screen w-screen">
 
         <div className="flex flex-col justify-center w-full items-center md:items-start md:px-[15%]">
-          <p className="ml-2 font-josefinsans text-md text-red-100/50 mb-1">SABA | AZAD | 17 | GIIS</p>
+          <p className="ml-2 font-josefinsans text-md text-rose-100/50 mb-1">SABA | AZAD | 17 | GIIS</p>
           <div className="line w-48 ml-2 border-t border-white my-2"></div>
           <h1 className="mb-2 z-10">PORTFOLIO</h1>
           <h2 className="ml-1">In production.</h2>
 
-          <div className="blob z-0 absolute rounded-[999px] blur-3xl md:w-[750px] w-[500px] h-[500px] md:h-[750px] bg-gradient-to-l from-red-500/5 via-orange-200/5 to-rose-300/5" />
+          <div className="blob z-0 absolute rounded-[999px] blur-3xl md:w-[750px] w-[500px] h-[500px] md:h-[750px] bg-gradient-to-l from-blue-500/5 via-orange-200/5 to-rose-300/5" />
           <div className="blob z-0 absolute top-0 left-0 rounded-[999px] blur-3xl w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-gradient-to-l from-orange-200/5 to-rose-400/5" />
-          <div className="blob z-0 absolute rounded-[999px] blur-3xl w-[200px] h-[200px] md:w-[500px] md:h-[500px] bg-gradient-to-l from-orange-500/10 md:from-yellow-500/5 to-rose-400/5" />
-          <div className="blob z-0 absolute bottom-0 right-0 rounded-[999px] blur-3xl w-[250px] h-[250px] md:w-[500px] md:h-[500px] bg-gradient-to-l from-rose-500/5 to-yellow-950/5 md:to-green-400/5" />
+          <div className="blob z-0 absolute rounded-[999px] blur-3xl w-[200px] h-[200px] md:w-[500px] md:h-[500px] bg-gradient-to-l from-orange-500/10 md:from-purple-500/5 to-rose-400/5" />
+          <div className="blob z-0 absolute bottom-0 right-0 rounded-[999px] blur-3xl w-[250px] h-[250px] md:w-[500px] md:h-[500px] bg-gradient-to-l from-rose-500/5 to-blue-950/5 md:to-purple-400/5" />
         </div>
 
       </div>
@@ -71,7 +61,7 @@ export default function Home() {
                 className="relative overflow-hidden"
                 style={{ height: `${getRandomHeight(250, 400)}px` }}
               >
-                <div className="flex justify-center items-center w-full h-full">
+                <div className="relative overflow-hidden w-full h-full">
                   <Image
                     src={project.image}
                     alt={project.title}
