@@ -33,7 +33,7 @@
   }
 
   h1{
-    @apply text-6xl md:text-8xl bg-gradient-to-bl from-rose-100 to-pink-100 text-transparent bg-clip-text mb-4 font-taviraj
+    @apply text-5xl md:text-7xl bg-gradient-to-bl from-rose-100 to-pink-100 text-transparent bg-clip-text mb-4 font-taviraj
   }
 
   h2{

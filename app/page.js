@@ -41,24 +41,27 @@ export default function Home() {
 
   return (
     <div className="">
+      {/* main sect*/}
       <div className="flex h-screen w-screen">
-
         <div className="flex flex-col justify-center w-full items-center md:items-start md:px-[15%]">
-          <p className="ml-2 font-josefinsans text-md text-rose-100 mb-1">SABA | AZAD | 17 | GIIS</p>
+          <p className="ml-2 font-josefinsans text-md text-rose-100 mb-1">PORTFOLIO | 17 | GIIS</p>
           <div className="line w-48 ml-2 border-t border-white my-2"></div>
-          <h1 className="mb-2 z-10">PORTFOLIO</h1>
-          <h2 className="ml-1">In production.</h2>
+          <h1 className="md:text-8xl mb-2 z-10">PORTFOLIO</h1>
+          <h2 className="ml-1 mb-4">SABA AZAD, ARTIST, DEVELOPER</h2>
+          <div className='w-1/2'>
+            <p className='text-[10px] text-center md:text-justify'>{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ligula eros, facilisis id leo id, venenatis tempor libero. Cras ullamcorper ultrices metus ac accumsan. Integer iaculis nibh eu lacinia vehicula. Nam at consequat justo. Suspendisse potenti. Aenean bibendum augue et mi suscipit bibendum.`}</p>
+          </div>
 
           <div className="blob z-0 absolute rounded-[999px] blur-3xl md:w-[750px] w-[500px] h-[500px] md:h-[750px] bg-gradient-to-l from-blue-500/5 via-purple-200/5 to-rose-300/5" />
           <div className="blob z-0 absolute top-0 left-0 rounded-[999px] blur-3xl w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-gradient-to-l from-pink-200/5 to-rose-400/5" />
           <div className="blob z-0 absolute rounded-[999px] blur-3xl w-[200px] h-[200px] md:w-[500px] md:h-[500px] bg-gradient-to-l from-pink-500/10 md:from-purple-500/5 to-rose-400/5" />
           <div className="blob z-0 absolute bottom-0 right-0 rounded-[999px] blur-3xl w-[250px] h-[250px] md:w-[500px] md:h-[500px] bg-gradient-to-l from-rose-500/5 to-blue-950/5 md:to-purple-400/5" />
         </div>
-
       </div>
 
+      {/* projects sect*/}
       <div>
-      <div className="flex justify-center items-center mb-12">
+        <div className="flex justify-center items-center mb-12">
           <div className="w-[25%] h-px bg-rose-100 mx-4 mb-2"></div>
           <h2 className="text-3xl">Projects</h2>
           <div className="w-[25%] h-px bg-rose-100 mx-4 mb-2"></div>
@@ -90,6 +93,17 @@ export default function Home() {
               ))}
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* about sect*/}
+      <div>
+        <div className='flex flex-col md:flex-row w-screen h-screen'>
+          <div className='w-screen md:w-1/2 flex flex-col justify-center px-16 py-8'>
+            <h1 className='md:text-6xl lg:text-7xl'>About me.</h1>
+            <p className='text-[12px] text-justify'>{`In at metus augue. Duis eget sagittis dolor. Morbi placerat fermentum orci sit amet interdum. Mauris iaculis enim ac nisi convallis sollicitudin. Aenean consequat commodo consequat. Mauris in metus ut velit accumsan mattis sit amet ac diam. Phasellus vel sem accumsan, commodo libero eget, sodales massa. Integer luctus quis mi vel fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc dictum rhoncus dolor ac varius.`}</p>
+            <p className='text-[12px] mt-4 text-justify font-pridimed'>{`My skills include`}</p>
+          </div>
         </div>
       </div>
 
