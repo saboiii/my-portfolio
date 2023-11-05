@@ -105,7 +105,7 @@ const Contact = () => {
     };
 
     return (
-        <div className='flex flex-col md:flex-row w-screen items-center'>
+        <div className='flex flex-col md:flex-row w-screen items-center py-16'>
             <div className='w-full md:w-1/2 items-center md:items-start flex flex-col px-16 py-16 md:pl-24 md:pr-16'>
                 <h2 className="text-[20px] font-averiabold">IDEAS?</h2>
                 <h1 className='text-4xl lg:text-6xl'>GET IN TOUCH</h1>
@@ -113,10 +113,6 @@ const Contact = () => {
                 <Link href='https://github.com/saboiii' className='flex text-xs flex-row items-center rounded-full pl-1 pr-2 py-1 hover:bg-[#331d25] transition duration-300 text-rose-200 font-pridimed'>
                     <AiFillGithub size={24} className='mr-2'/>
                     GitHub
-                </Link>
-                <Link href='' className='flex text-xs flex-row items-center rounded-full pl-1 pr-2 py-1 hover:bg-[#331d25] transition duration-300 text-rose-200 font-pridimed'>
-                    <AiFillInstagram size={24} className='mr-2'/>
-                    @saboiiiii
                 </Link>
             </div>
 
