@@ -41,17 +41,19 @@ export default function Home() {
 
 
   return (
-    <div className="w-screen">
+    <div className="w-screen overflow-hidden">
       {/* main sect*/}
-      <div className="flex h-screen w-full">
+      <div className="flex h-screen w-full ">
         <div className="flex flex-col justify-center w-full items-center md:items-start md:px-[15%]">
           <p className="ml-2 font-josefinsans text-md text-rose-100 mb-1">SABA AZAD | 17 | GIIS</p>
           <div className="line w-48 ml-2 border-t border-white-[0.5px] my-2"></div>
           <h1 className="md:text-8xl mb-2 z-10">PORTFOLIO</h1>
           <h2 className="ml-1 mb-4 text-center">ARTIST, DEVELOPER</h2>
           <div className='w-1/2'>
+            {/*
             <p className='text-xs text-center md:text-justify'>{`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ligula eros, facilisis id leo id, venenatis tempor libero. Cras ullamcorper ultrices metus ac accumsan. Integer iaculis nibh eu lacinia vehicula. Nam at consequat justo. Suspendisse potenti. Aenean bibendum augue et mi suscipit bibendum.`}</p>
-          </div>
+            */}
+            </div>
 
           <div className="blob z-0 absolute rounded-[999px] blur-3xl md:w-[750px] w-[500px] h-[500px] md:h-[750px] bg-gradient-to-l from-blue-500/5 via-purple-200/5 to-rose-300/5" />
           <div className="blob z-0 absolute top-0 left-0 rounded-[999px] blur-3xl w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-gradient-to-l from-pink-200/5 to-rose-400/5" />
@@ -99,13 +101,13 @@ export default function Home() {
       </div>
 
       {/* about sect*/}
-      <div className='flex flex-col items-center justify-center'>
-        <div className='flex flex-col md:flex-row w-screen py-16'>
+      <div className='flex flex-col w-screen overflow-hidden items-center justify-center'>
+        <div className='flex flex-col md:flex-row py-16 md:pr-16'>
           <div className="blob z-0 absolute rounded-[999px] blur-3xl md:w-[750px] w-[500px] h-[500px] md:h-[750px] bg-gradient-to-l from-blue-500/5 via-purple-200/5 to-rose-300/5" />
           <div className="blob z-0 absolute rounded-[999px] blur-3xl w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-gradient-to-l from-pink-200/5 to-rose-400/5" />
           <div className="blob z-0 absolute rounded-[999px] blur-3xl w-[200px] h-[200px] md:w-[500px] md:h-[500px] bg-gradient-to-l from-pink-500/10 md:from-purple-500/5 to-rose-400/5" />
 
-          <div className='w-screen md:w-1/2 flex items-center justify-center'>
+          <div className='hidden w-screen md:w-1/2 md:flex items-center justify-center h-[75vh]'>
             <div className='relative w-full h-[75%] z-100 overflow-hidden flex items-center justify-center'>
               <Image
                 src='/images/me.png'
@@ -117,9 +119,11 @@ export default function Home() {
           </div>
           <div className='w-full justify-center md:py-0 items-center md:items-start md:w-1/2 flex flex-col px-16 md:pr-24 md:pl-8 '>
             <h2 className="text-[20px] font-averiabold">learn more</h2>
-            <h1 className='md:text-4xl lg:text-6xl'>ABOUT ME.</h1>
+            <h1 className='text-3xl lg:text-6xl'>ABOUT ME.</h1>
             <div className="w-[75%] h-[0.5px] mb-4 bg-rose-100" />
-            <p className='text-xs text-justify'>{`In at metus augue. Duis eget sagittis dolor. Morbi placerat fermentum orci sit amet interdum. Mauris iaculis enim ac nisi convallis sollicitudin. Aenean consequat commodo consequat. Mauris in metus ut velit accumsan mattis sit amet ac diam. Phasellus vel sem accumsan, commodo libero eget, sodales massa. Integer luctus quis mi vel fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc dictum rhoncus dolor ac varius.`}</p>
+            <p className='text-xs text-justify'>{`
+            I'm a tech enthusiast with a passion for crafting unique digital experiences. Proficient in JavaScript (Next.js, React, Node.js), HTML, CSS, C#, and Python, my journey has taken me from developing a groundbreaking predictive algorithm for cancer-type identification to leading the creation of a captivating full-stack blog web app for my social campaign, the CHERISH Initiative.
+            `}</p>
             <div className="mt-2 flex flex-wrap">
               <span className="rounded-full bg-[#cfbbb4] text-[#0a0706] px-4 m-1 font-averiabold">HTML</span>
               <span className="rounded-full bg-[#cfb4b4] text-[#0a0706] px-4 m-1 font-averiabold">CSS</span>
