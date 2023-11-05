@@ -4,7 +4,7 @@ import Image from 'next/legacy/image'
 
 const Navbar = () => {
   return (
-    <div className='fixed w-full h-20 z-10'>
+    <div className='fixed w-screen h-20 z-10'>
       <div className='flex justify-start w-full h-full'>
         <ul className='flex items-center px-8'>
           <Link href="/" className='mt-1'>
