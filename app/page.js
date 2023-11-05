@@ -100,7 +100,7 @@ export default function Home() {
 
       {/* about sect*/}
       <div className='flex flex-col items-center justify-center'>
-        <div className='flex flex-col md:flex-row w-screen h-[80vh]'>
+        <div className='flex flex-col md:flex-row w-screen py-16'>
           <div className="blob z-0 absolute rounded-[999px] blur-3xl md:w-[750px] w-[500px] h-[500px] md:h-[750px] bg-gradient-to-l from-blue-500/5 via-purple-200/5 to-rose-300/5" />
           <div className="blob z-0 absolute rounded-[999px] blur-3xl w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-gradient-to-l from-pink-200/5 to-rose-400/5" />
           <div className="blob z-0 absolute rounded-[999px] blur-3xl w-[200px] h-[200px] md:w-[500px] md:h-[500px] bg-gradient-to-l from-pink-500/10 md:from-purple-500/5 to-rose-400/5" />
@@ -115,7 +115,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className='w-full justify-center py-32 md:py-0 items-center md:items-start md:w-1/2 flex flex-col px-16 md:pr-24 md:pl-8 '>
+          <div className='w-full justify-center md:py-0 items-center md:items-start md:w-1/2 flex flex-col px-16 md:pr-24 md:pl-8 '>
             <h2 className="text-[20px] font-averiabold">learn more</h2>
             <h1 className='md:text-4xl lg:text-6xl'>ABOUT ME.</h1>
             <div className="w-[75%] h-[0.5px] mb-4 bg-rose-100" />

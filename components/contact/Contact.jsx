@@ -1,5 +1,7 @@
 'use client'
 import React, { useState } from 'react';
+import Link from "next/link"
+import { AiFillGithub, AiFillInstagram } from 'react-icons/ai';
 
 const Contact = () => {
 
@@ -108,7 +110,14 @@ const Contact = () => {
                 <h2 className="text-[20px] font-averiabold">IDEAS?</h2>
                 <h1 className='text-4xl lg:text-6xl'>GET IN TOUCH</h1>
                 <div className="w-[75%] h-[0.5px] mb-4 bg-rose-100" />
-                <p className='text-xs text-justify'>{`In at metus augue. Duis eget sagittis dolor. Morbi placerat fermentum orci sit amet interdum. Mauris iaculis enim ac nisi convallis sollicitudin. Aenean consequat commodo consequat. Mauris in metus ut velit accumsan mattis sit amet ac diam. Phasellus vel sem accumsan, commodo libero eget, sodales massa. Integer luctus quis mi vel fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc dictum rhoncus dolor ac varius.`}</p>
+                <Link href='https://github.com/saboiii' className='flex text-xs flex-row items-center rounded-full pl-1 pr-2 py-1 hover:bg-[#331d25] transition duration-300 text-rose-200 font-pridimed'>
+                    <AiFillGithub size={24} className='mr-2'/>
+                    GitHub
+                </Link>
+                <Link href='' className='flex text-xs flex-row items-center rounded-full pl-1 pr-2 py-1 hover:bg-[#331d25] transition duration-300 text-rose-200 font-pridimed'>
+                    <AiFillInstagram size={24} className='mr-2'/>
+                    @saboiiiii
+                </Link>
             </div>
 
             <div className='w-full md:w-1/2 md:items-start flex flex-col px-16 md:pr-24 md:pl-0'>
@@ -149,7 +158,7 @@ const Contact = () => {
                         onChange={handleMessageChange}
                     />
                     <button
-                        className={`bg-gradient-to-b from-[#51343e] to-[#462732] px-4 py-1 rounded-full font-averiabold text-rose-100 ${isLoading ? 'cursor-not-allowed' : ''
+                        className={`bg-gradient-to-b from-[#51343e] to-[#462732] transition duration-300 hover:scale-105 px-4 py-1 rounded-full font-averiabold text-rose-100 ${isLoading ? 'cursor-not-allowed' : ''
                             }`}
                         disabled={isLoading}
                     >
@@ -162,7 +171,6 @@ const Contact = () => {
                         )}
                     </button>
                 </form>
-
 
                 <div className="text-emerald-400 text-xs font-pridimedium my-4">
                     {successMessage && <p>{successMessage}</p>}
