@@ -103,7 +103,7 @@ const Contact = () => {
     };
 
     return (
-        <div className='flex flex-col md:flex-row w-screen h-[75vh] items-center'>
+        <div className='flex flex-col md:flex-row w-screen items-center'>
             <div className='w-full md:w-1/2 items-center md:items-start flex flex-col px-16 py-16 md:pl-24 md:pr-16'>
                 <h2 className="text-[20px] font-averiabold">IDEAS?</h2>
                 <h1 className='text-4xl lg:text-6xl'>GET IN TOUCH</h1>
